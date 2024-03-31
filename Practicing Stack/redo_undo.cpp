@@ -15,3 +15,8 @@ void red(T data){
     stack<T> newStack;
     newStack.push(T)
 }
+
+//test func 
+int main(){
+    return 0;
+}

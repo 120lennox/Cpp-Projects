@@ -16,7 +16,7 @@ void red(T data){
     newStack.push(T)
 }
 
-//test func 
+//test func
 int main(){
     return 0;
 }

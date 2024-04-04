@@ -15,9 +15,32 @@ void logicaloperators(int a, int b){
     }
 }
 
+int bitwiseAND(int a, int b){
+    return a & b;
+}
+
+int bitwiseOR(int a, int b){
+    return a | b;
+}
+
+int bitwiseXOR(int a, int b){
+    return a ^ b;
+}
+
+int bitwiseOnesComplement(int a){
+    return ~a;
+}
+
+
 /**
  * a and b are true because both are non-zero
 */
 int main(){
+    int x = 60;
+    int y = 20;
     logicaloperators(5, 20);
+    cout<<"bitwise AND: "<<bitwiseAND(x, y)<<endl;
+    cout<<"bitwise OR: "<<bitwiseOR(x, y)<<endl;
+    cout<<"bitwise XOR: "<<bitwiseXOR(x, y)<<endl;
+    cout<<"bitwise OnesCompliment: "<<bitwiseOnesComplement(x)<<endl;
 }

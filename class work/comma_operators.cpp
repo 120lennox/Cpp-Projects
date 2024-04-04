@@ -6,6 +6,7 @@
 
 #include <iostream>
 #include <string>
+#include <cstring>
 using namespace std;
 
 int commaOne(){
@@ -16,6 +17,19 @@ int commaOne(){
     return result;
 }
 
+int assignVar(){
+    int i, j;
+    i = 20;
+    j = (i + 10, 100 + i, ++i);
+    return j;
+}
+
+void strings(){
+    string s1 = "Lennox";
+    string s2 = "Lennox";
+    char s3 = 'A';
+}
+
 int ternary_operator(){
     int x, y = 21;
 
@@ -24,5 +38,7 @@ int ternary_operator(){
 }
 
 int main(){
-    cout<<ternary_operator()<<endl;
+    //cout<<ternary_operator()<<endl;
+    cout<<assignVar()<<endl;
+
 }

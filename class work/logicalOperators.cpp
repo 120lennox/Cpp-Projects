@@ -31,6 +31,14 @@ int bitwiseOnesComplement(int a){
     return ~a;
 }
 
+int leftShift(int number, int points){
+    return number << points;
+}
+
+int rightShift(int number, int points){
+    return number >> points;
+}
+
 
 /**
  * a and b are true because both are non-zero
@@ -38,9 +46,13 @@ int bitwiseOnesComplement(int a){
 int main(){
     int x = 60;
     int y = 20;
+    int points = 2;
     logicaloperators(5, 20);
     cout<<"bitwise AND: "<<bitwiseAND(x, y)<<endl;
     cout<<"bitwise OR: "<<bitwiseOR(x, y)<<endl;
     cout<<"bitwise XOR: "<<bitwiseXOR(x, y)<<endl;
     cout<<"bitwise OnesCompliment: "<<bitwiseOnesComplement(x)<<endl;
+    cout<<leftShift(x, points)<<endl;
+    cout<<leftShift(y, points)<<endl;
+
 }

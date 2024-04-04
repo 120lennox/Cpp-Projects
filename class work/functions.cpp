@@ -19,13 +19,15 @@ int add(int num1, float num2);
 
 namespace lennox {
     int number; 
-    void printName();
+    void printName(std::string name);
 }
 
 //using namespaces 
 int main(){
+    std::string name = "Lennox Mountain";
     lennox::number = 120;
     std::cout<<lennox::number<<std::endl;
+    lennox::printName(name);
 }
 
 /**
@@ -34,3 +36,8 @@ int main(){
 */
 
 using namespace lennox;
+using namespace std;
+
+void printName(string name){
+    cout<<"Hello, "<<name<<endl;
+}

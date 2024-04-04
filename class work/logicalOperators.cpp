@@ -39,6 +39,15 @@ int rightShift(int number, int points){
     return number >> points;
 }
 
+//assignement operators 
+int leftShift_assign(int num, int points){
+    return num <<= points;
+}
+
+int rightShift_assign(int num, int points){
+    return num >>= points;
+}
+
 
 /**
  * a and b are true because both are non-zero

@@ -28,6 +28,11 @@ void write_word(){
 }
 
 int main(){
-    //write_word();
-    read_word();
+    ofstream output("numbers.txt");
+    for (int i = 1; i < 20; i++){
+        output<<i<<" ";
+        if (i % 10 == 0){
+            output<<"\n";
+        }
+    }
 }

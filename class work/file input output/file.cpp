@@ -28,5 +28,6 @@ void write_word(){
 }
 
 int main(){
-
+    //write_word();
+    read_word();
 }
